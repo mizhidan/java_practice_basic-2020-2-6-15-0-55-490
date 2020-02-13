@@ -1,23 +1,31 @@
 package animals;
 
 public class Animal {
-    int age;
-    int weight;
+    private String age;
+    private String weight;
 
     public Animal() {
 
     }
 
-    public Animal(int inputAge,int inputWeight) {
+    public Animal(String inputAge,String inputWeight) {
         age = inputAge;
         weight = inputWeight;
     }
 
     public void eat() {
-        
+        System.out.println("饱餐一顿");
     }
 
     public void sleep() {
+        System.out.println("心满意足地睡觉了");
+    }
 
+    public String getAge() {
+        return age;
+    }
+
+    public String getWeight() {
+        return weight;
     }
 }

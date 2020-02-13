@@ -7,12 +7,17 @@ public class Bird extends Animal{
 
     }
 
-    public Bird(String inputSpeed) {
+    public Bird(String inputSpeed,String age,String weight) {
+        super(age,weight);
         flySpeed = inputSpeed;
     }
 
-    public void fly() {
+    public String getFlySpeed() {
+        return flySpeed;
+    }
 
+    public void fly() {
+        System.out.println("翱翔天空");
     }
 
 }
